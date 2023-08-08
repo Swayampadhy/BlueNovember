@@ -1,12 +1,9 @@
 ﻿  Building 'BlueNovember' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
   Stamping x64\Debug\BlueNovember.inf
-  Stamping [Version] section with DriverVer=08/08/2023,11.5.10.218
+  Stamping [Version] section with DriverVer=08/08/2023,11.50.15.881
   BlueNovember.vcxproj -> C:\Users\Swayam\source\repos\BlueNovember\x64\Debug\BlueNovember.sys
-  Done Adding Additional Store
-  Successfully signed: C:\Users\Swayam\source\repos\BlueNovember\x64\Debug\BlueNovember.sys
-  
   Driver is 'Universal'.
-  ........................
+  .........................
   Signability test complete.
   
   Errors:
