@@ -1,5 +1,6 @@
 #pragma once
 
+#pragma warning(disable: 4200)
 typedef enum _SYSTEM_INFORMATION_CLASS
 {
 	SystemModuleInformation = 11,

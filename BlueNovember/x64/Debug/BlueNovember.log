@@ -1,6 +1,22 @@
 ﻿  Building 'BlueNovember' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
   Stamping x64\Debug\BlueNovember.inf
-  Stamping [Version] section with DriverVer=08/08/2023,6.48.55.990
-  main.cpp
-C:\Users\Swayam\source\repos\BlueNovember\BlueNovember\main.cpp(537,65): error C2220: the following warning is treated as an error
-C:\Users\Swayam\source\repos\BlueNovember\BlueNovember\main.cpp(537,65): warning C4996: 'ExAllocatePoolWithTag': ExAllocatePoolWithTag is deprecated, use ExAllocatePool2.
+  Stamping [Version] section with DriverVer=08/08/2023,11.5.10.218
+  BlueNovember.vcxproj -> C:\Users\Swayam\source\repos\BlueNovember\x64\Debug\BlueNovember.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Swayam\source\repos\BlueNovember\x64\Debug\BlueNovember.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\Swayam\source\repos\BlueNovember\x64\Debug\BlueNovember\bluenovember.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Swayam\source\repos\BlueNovember\x64\Debug\BlueNovember\bluenovember.cat
+  

@@ -24,24 +24,21 @@
     </Inf>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="cpp.hint" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="WindowsVersions.h">
+    <ClInclude Include="IOCTLs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Common.h">
+    <ClInclude Include="WindowsVersions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Processes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IOCTLS.h">
+    <ClInclude Include="Common.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

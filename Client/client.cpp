@@ -5,6 +5,17 @@
 
 #include "..\BlueNovember\IOCTLs.h"
 #include "..\BlueNovember\Common.h"
+#pragma warning(disable: 6262)
+#pragma warning(disable: 6386)
+#pragma warning(disable: 6387)
+#pragma warning(disable: 6273)
+#pragma warning(disable: 6011)
+#pragma warning(disable: 6385)
+#pragma warning(disable: 4477)
+#pragma warning(disable: 4313)
+#pragma warning(disable: 4475)
+#pragma warning(disable: 4018)
+
 
 ULONG64 GetCiOptionsAddress();
 PVOID GetModuleBase(LPCSTR moduleName);

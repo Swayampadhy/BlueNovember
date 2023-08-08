@@ -1,10 +1,2 @@
 ﻿  client.cpp
-C:\Users\Swayam\source\repos\BlueNovember\Client\Winternal.h(24,23): warning C4200: nonstandard extension used: zero-sized array in struct/union
-C:\Users\Swayam\source\repos\BlueNovember\Client\Winternal.h(24,23): message : This member will be ignored by a defaulted constructor or copy/move assignment operator
-C:\Users\Swayam\source\repos\BlueNovember\Client\client.cpp(213,20): warning C4477: 'printf' : format string '%04X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'void *'
-C:\Users\Swayam\source\repos\BlueNovember\Client\client.cpp(213,20): warning C4313: 'printf': '%X' in format string conflicts with argument 1 of type 'void *'
-C:\Users\Swayam\source\repos\BlueNovember\Client\client.cpp(289,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'p' in format specifier
-C:\Users\Swayam\source\repos\BlueNovember\Client\client.cpp(292,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'p' in format specifier
-C:\Users\Swayam\source\repos\BlueNovember\Client\client.cpp(333,24): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Swayam\source\repos\BlueNovember\Client\client.cpp(337,20): warning C4477: 'printf' : format string '%llX' requires an argument of type 'unsigned __int64', but variadic argument 2 has type 'PVOID'
   Client.vcxproj -> C:\Users\Swayam\source\repos\BlueNovember\x64\Debug\Client.exe
