@@ -33,17 +33,17 @@ B.  Download the release , unzip and place it in **C:\BlueNovember**.
 Step-3 :
 -----
 Type `sc create BlueNovember type= kernel binPath= C:\BlueNovember\BlueNovember.sys` to create a service of the driver.
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/b0279f91-8885-4869-92a0-fe411e75a303)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/b0279f91-8885-4869-92a0-fe411e75a303)
 
 Then type `sc qc BlueNovember` to check the process status.
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/3c4a12cd-cb64-4a16-9df5-57afa8930614)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/3c4a12cd-cb64-4a16-9df5-57afa8930614)
 
 
 Step-4 :
 ------
 
 Type `sc start BlueNovember` to start the service.
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/6d9a8cff-c1fb-494e-abfc-e47763b279c4)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/6d9a8cff-c1fb-494e-abfc-e47763b279c4)
 
 Step-5 :
 ------
@@ -57,47 +57,47 @@ If you want to delete the driver , type - `sc stop BlueNovember` to stop the dri
 
 1. `-pp <PID of processes>` : **Protect processes** - This option will ensure kernel level protection for the processes with the given PIDs.
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/4f4beab3-47e0-4194-b50f-b6e45eed00dc)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/4f4beab3-47e0-4194-b50f-b6e45eed00dc)
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/cb077b79-ccda-480b-936f-a8bf83e8e387)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/cb077b79-ccda-480b-936f-a8bf83e8e387)
 
 2. `-up <PID of processes>` : **Unprotect Process** - This option will remove kernel level protection for the processes with the given PIDs.
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/41b97ce6-c4ac-4193-99ee-40e80bc7eea8)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/41b97ce6-c4ac-4193-99ee-40e80bc7eea8)
 
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/38ec40fc-e442-4e99-9427-455dfe0bb17d)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/38ec40fc-e442-4e99-9427-455dfe0bb17d)
 
 3. `-t <PID of process>`    : **Grant all privilege** - This option will grant all privileges to the process with the given PID.
 
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/64e2f00a-263f-4aad-badc-1cb6c53cb259)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/64e2f00a-263f-4aad-badc-1cb6c53cb259)
 
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/caef801b-b2d0-4417-a441-7078b5ba62fb)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/caef801b-b2d0-4417-a441-7078b5ba62fb)
 
 4. `-l <PID of process>`    : **Enumerate kernel callbacks** - This option will enumerate all kernel callbacks issued by the process.
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/240a5459-1fa2-4c37-ab86-97423ad05d94)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/240a5459-1fa2-4c37-ab86-97423ad05d94)
 
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/46400c5a-de46-4cb8-843c-9f86120d3545)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/46400c5a-de46-4cb8-843c-9f86120d3545)
 
 5. `-r <PID of process>`    : **Remove callbacks** - This option removes all kernel callbacks issued by the process.
 
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/0bb85aad-28c3-47e9-bd0a-901b5091b4a2)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/0bb85aad-28c3-47e9-bd0a-901b5091b4a2)
 
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/54d8edae-3744-44f8-809c-25b7ce9a3ac0)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/54d8edae-3744-44f8-809c-25b7ce9a3ac0)
 
 6. `-ci `                   : **Enumerate DSE** - This option enumerates Driver signature enforcement(DSE) of the driver.
 
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/1812d277-8990-47e8-86b5-0ee61b4575ed)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/1812d277-8990-47e8-86b5-0ee61b4575ed)
 
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/291d60f7-e34d-4bae-8eed-e42d4f96127e)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/291d60f7-e34d-4bae-8eed-e42d4f96127e)
 
 7. `-ciE`                   : **Enable DSE** - This option enables DSE of the driver.
 
