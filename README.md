@@ -22,9 +22,11 @@ From the perspective of the kernel, the protection level of a process is stored 
 
 **Kernel callbacks** provide a way for drivers to receive a notification when certain events occur. These are used rather extensively by AV, EDR and system monitoring applications. The more relevant ones from an attack/defence perspective are:
 
-1.ProcessNotify - called when a process is created or exits.  Useful for preventing the process from starting outright, or to inject a userland DLL (that can perform tasks such as API hooking) before control of the process is returned to the caller.
-2.ThreadNotify - called when a new thread is created or deleted.  Useful for detecting/preventing some process injection techniques by looking for threads being created from one process to another.
-3.LoadImageNotify - called when a new DLL is mapped into memory.  Useful for detecting/preventing suspicious image loads, such as the CLR being loaded into a native process, or modules synonymous with tools such as Mimikatz.
+1. **ProcessNotify** - called when a process is created or exits.  Useful for preventing the process from starting outright, or to inject a userland DLL (that can perform tasks such as API hooking) before control of the process is returned to the caller.
+
+2. **ThreadNotify** - called when a new thread is created or deleted.  Useful for detecting/preventing some process injection techniques by looking for threads being created from one process to another.
+
+3. **LoadImageNotify** - called when a new DLL is mapped into memory.  Useful for detecting/preventing suspicious image loads, such as the CLR being loaded into a native process, or modules synonymous with tools such as Mimikatz.
 
 Since version 10 1607, Windows will not load a kernel-mode driver unless it's signed via the Microsoft Dev Portal.  For developers, this first means obtaining an extended validation (EV) code signing certificate from a provider such as DigiCert, GlobalSign, and others.  They must then apply to join the Windows Hardware Dev Center program by submitting their EV cert and going through a further vetting process.  Assuming they get accepted, a driver needs to be signed by the developer with their EV cert and uploaded to the Dev Portal to be approved and signed by Microsoft. This fairly rigorous process is to protect Windows from malicious and/or unstable code running in the kernel.
 
