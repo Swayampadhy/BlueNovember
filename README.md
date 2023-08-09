@@ -10,6 +10,24 @@ An offensive driver created with the intent to evade kernel level security solut
 ### Theory
 -----
 -----
+**A driver's** most typical use case is to allow an operating system to talk to a hardware device.A driver doesn't need to control hardware, and pure software drivers do also exist.  The purpose of those will vary - one example of such a driver is anti-virus, where the driver is designed to help protect the computer against malicious actions.
+
+**KPP (aka PatchGuard)** is a feature present in Windows designed to protect the kernel against unauthorised modifications.  It works by periodically checking structures that Microsoft deem sensitive and if a change is detected, it will trigger a bug check and crash the system.When using drivers to circumvent certain kernel-level protection, we are going to stamp over KPP-protected regions.  One "weakness" of KPP is that because the checks are expensive (computationally), it's not constantly checking protected regions.  This introduces a type of race condition where we can modify a protected region and change it back without KPP noticing.
+
+**Protected Processes** were first introduced in Windows Vista - not for security, but DRM (Digital Rights Management).  The idea was to allow media players to read Blu-rays, but not copy the content.  It worked fundamentally by limiting the access you could obtain to a protected process, such as PROCESS_QUERY_LIMITED_INFORMATION or PROCESS_TERMINATE, but not PROCESS_VM_READ or anything else that would allow you to circumvent the DRM requirements.
+
+From the perspective of the kernel, the protection level of a process is stored in a struct called **EPROCESS** - an opaque structure that serves as the process object for a process.  We can obtain a pointer to the EPROCESS struct for a process using PsLookupProcessByProcessId.  But unfortunately, because the struct is opaque, we can't just access its members like **eProcess->Protection**.  Instead, we have to use known offsets.  The downside is that these offsets vary between different versions of Windows.
+
+**Process privilege** determines the type of operations that a process can perform.  A process running in medium integrity (right) has very few privileges available; whereas a process running in high integrity (left) has more.  Some privileges are Default Enabled, which means they are enabled by default (duh).  Others are Disabled but are available, which means they can be enabled using the AdjustTokenPrivileges API. Take SeDebugPrivilege as an example.  The high integrity process has it disabled but available (the token::elevate command in Mimikatz enables this privilege).  The medium integrity process cannot enable it at all.
+
+**Kernel callbacks** provide a way for drivers to receive a notification when certain events occur. These are used rather extensively by AV, EDR and system monitoring applications. The more relevant ones from an attack/defence perspective are:
+
+1.ProcessNotify - called when a process is created or exits.  Useful for preventing the process from starting outright, or to inject a userland DLL (that can perform tasks such as API hooking) before control of the process is returned to the caller.
+2.ThreadNotify - called when a new thread is created or deleted.  Useful for detecting/preventing some process injection techniques by looking for threads being created from one process to another.
+3.LoadImageNotify - called when a new DLL is mapped into memory.  Useful for detecting/preventing suspicious image loads, such as the CLR being loaded into a native process, or modules synonymous with tools such as Mimikatz.
+
+Since version 10 1607, Windows will not load a kernel-mode driver unless it's signed via the Microsoft Dev Portal.  For developers, this first means obtaining an extended validation (EV) code signing certificate from a provider such as DigiCert, GlobalSign, and others.  They must then apply to join the Windows Hardware Dev Center program by submitting their EV cert and going through a further vetting process.  Assuming they get accepted, a driver needs to be signed by the developer with their EV cert and uploaded to the Dev Portal to be approved and signed by Microsoft. This fairly rigorous process is to protect Windows from malicious and/or unstable code running in the kernel.
+
 
 ### Objectives Of Driver
 ------
