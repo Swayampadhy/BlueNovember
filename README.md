@@ -3,17 +3,17 @@
 ### Credits to ZeroPointSecurity and IRED.team for helping me learn about offensive kernel drivers.
 
 ### About
---
 -----
-
-
+-----
 An offensive driver created with the intent to evade kernel level security solutions such as anti-viruses and built-in protective measures such as kernel callbacks and process protection.It can also be used to change process token privileges and enforce Driver signatures.This is a client-driver model. The client issues commands and the driver carries them out all the while returning the results.
 
 ### Theory
-
+-----
+-----
 
 ### Objectives Of Driver
-
+------
+-----
 1. Create Persistence of an attacker in the system
 2. Change kernel protection of processes - i.e Add or remove protection
 3. Change privileges of processes
@@ -61,7 +61,8 @@ STEP-6 (Optional) :
 If you want to delete the driver , type - `sc stop BlueNovember` to stop the driver service and then type - `sc delete BlueNovember` to delete the service. After that you can remove the files in **C:\BlueNovember** .
 
 ### Execution Options 
-
+-------
+-------
 1. `-pp <PID of processes>` : **Protect processes** - This option will ensure kernel level protection for the processes with the given PIDs.
 
   ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/4f4beab3-47e0-4194-b50f-b6e45eed00dc)
@@ -109,7 +110,7 @@ If you want to delete the driver , type - `sc stop BlueNovember` to stop the dri
 
 
 ### To-do -
-
+-------
 1. Solve windows 22H2 randomly crashing after issuing commands.
 2. Streamlining the code more.
 3. Adding more functionalities.
