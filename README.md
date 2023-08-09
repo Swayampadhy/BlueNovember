@@ -3,7 +3,7 @@
 ### Credits to ZeroPointSecurity and IRED.team for helping me learn about offensive kernel drivers.
 
 ### About
-An offensive driver created with the intent to evade kernel level security solutions such as anti-viruses and built-in protective measures such as kernel callbacks and process protection.It can also be used to change process token privileges and enforce Driver signatures.This is a client-driver model. The client issues commands and the driver them carries out while returning the results.
+An offensive driver created with the intent to evade kernel level security solutions such as anti-viruses and built-in protective measures such as kernel callbacks and process protection.It can also be used to change process token privileges and enforce Driver signatures.This is a client-driver model. The client issues commands and the driver carries them out all the while returning the results.
 
 ### Objectives Of Driver
 
