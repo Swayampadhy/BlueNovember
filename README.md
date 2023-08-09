@@ -3,7 +3,14 @@
 ### Credits to ZeroPointSecurity and IRED.team for helping me learn about offensive kernel drivers.
 
 ### About
+--
+-----
+
+
 An offensive driver created with the intent to evade kernel level security solutions such as anti-viruses and built-in protective measures such as kernel callbacks and process protection.It can also be used to change process token privileges and enforce Driver signatures.This is a client-driver model. The client issues commands and the driver carries them out all the while returning the results.
+
+### Theory
+
 
 ### Objectives Of Driver
 
@@ -94,6 +101,9 @@ If you want to delete the driver , type - `sc stop BlueNovember` to stop the dri
   ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/291d60f7-e34d-4bae-8eed-e42d4f96127e)
 
 7. `-ciE`                   : **Enable DSE** - This option enables DSE of the driver.
+
+![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/de029a60-9ce7-462c-b949-c195682a177a)
+
 
 8. `-ciD`                   : **Disable DSE** - This option disables DSE of the driver.
 
