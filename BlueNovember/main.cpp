@@ -76,7 +76,7 @@ DeviceControl(
 	// check Windows version
 	WINDOWS_VERSION windowsVersion = GetWindowsVersion();
 
-	if (windowsVersion == WINDOWS_UNSUPPORTED)
+	/*if (windowsVersion == WINDOWS_UNSUPPORTED)
 	{
 		status = STATUS_NOT_SUPPORTED;
 		KdPrint(("[!] Windows Version Unsupported\n"));
@@ -88,7 +88,7 @@ DeviceControl(
 
 		return status;
 	}
-
+	*/
 	PIO_STACK_LOCATION stack = IoGetCurrentIrpStackLocation(Irp);
 
 	switch (stack->Parameters.DeviceIoControl.IoControlCode)

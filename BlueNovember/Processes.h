@@ -33,7 +33,8 @@ const ULONG PROCESS_PRIVILEGE_OFFSET[] =
     0x00,   // placeholder
     0x00,   // placeholder
     0x00,   // placeholder
-    0x00    // placeholder
+    0x00,    // placeholder
+    0x040    // placeholder
 };
 
 const ULONG PROCESS_PROTECTION_OFFSET[] =
@@ -48,7 +49,8 @@ const ULONG PROCESS_PROTECTION_OFFSET[] =
     0x00,   // placeholder
     0x00,   // placeholder
     0x00,   // placeholder
-    0x00    // placeholder
+    0x00,   // placeholder
+    0x878    // placeholder
 };
 
 const UCHAR OPCODE_CALL = 0xE8;
@@ -67,6 +69,7 @@ const UCHAR PSP_OPCODE[] =
     0x00,           // placeholder
     0x00,           // placeholder
     0x00,           // placeholder
+    0x00,           // placeholder
     0x00            // placeholder
 };
 
@@ -78,6 +81,7 @@ const ULONG PROCESS_NOTIFY_LEA[] =
     0x00,   // placeholder
     0x00,   // placeholder
     0xe8,   // REDSTONE_5
+    0x00,   // placeholder
     0x00,   // placeholder
     0x00,   // placeholder
     0x00,   // placeholder
