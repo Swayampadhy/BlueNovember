@@ -76,20 +76,14 @@ If you want to delete the driver , type - `sc stop BlueNovember` to stop the dri
 
   ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/caef801b-b2d0-4417-a441-7078b5ba62fb)
 
-4. `-l <PID of process>`    : **Enumerate kernel callbacks** - This option will enumerate all kernel callbacks issued by the process.
+4. `-l `    : **Enumerate kernel callbacks** - This option will enumerate all kernel callbacks issued by the processes.
 
-  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/240a5459-1fa2-4c37-ab86-97423ad05d94)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/5f1948e5-8b72-485a-bc46-55ad5ebfa7b6)
 
+5. `-r <process no>`    : **Remove callbacks** - This option removes all kernel callbacks issued by the process given.
 
-  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/46400c5a-de46-4cb8-843c-9f86120d3545)
+  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/b4b56d98-ea57-448d-abfa-914aa1cc3133)
 
-5. `-r <PID of process>`    : **Remove callbacks** - This option removes all kernel callbacks issued by the process.
-
-
-  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/0bb85aad-28c3-47e9-bd0a-901b5091b4a2)
-
-
-  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/54d8edae-3744-44f8-809c-25b7ce9a3ac0)
 
 6. `-ci `                   : **Enumerate DSE** - This option enumerates Driver signature enforcement(DSE) of the driver.
 
