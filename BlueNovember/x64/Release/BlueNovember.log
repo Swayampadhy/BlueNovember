@@ -1,7 +1,0 @@
-﻿  Building 'BlueNovember' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
-  Stamping x64\Release\BlueNovember.inf
-  Stamping [Version] section with DriverVer=08/08/2023,12.10.58.532
-  Main.cpp
-Main.obj : error LNK2019: unresolved external symbol AuxKlibInitialize referenced in function "void __cdecl SearchLoadedModules(struct _CALLBACK_INFORMATION *)" (?SearchLoadedModules@@YAXPEAU_CALLBACK_INFORMATION@@@Z)
-Main.obj : error LNK2019: unresolved external symbol AuxKlibQueryModuleInformation referenced in function "void __cdecl SearchLoadedModules(struct _CALLBACK_INFORMATION *)" (?SearchLoadedModules@@YAXPEAU_CALLBACK_INFORMATION@@@Z)
-C:\Users\Swayam\source\repos\BlueNovember\x64\Release\BlueNovember.sys : fatal error LNK1120: 2 unresolved externals
