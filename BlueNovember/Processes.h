@@ -69,8 +69,8 @@ const UCHAR PSP_OPCODE[] =
     0x00,           // placeholder
     0x00,           // placeholder
     0x00,           // placeholder
-    0x00,           // placeholder
-    0x00            // 22H2
+    OPCODE_JMP,     // placeholder
+    OPCODE_LEA      // 22H2
 };
 
 const ULONG PROCESS_NOTIFY_LEA[] =
@@ -81,10 +81,10 @@ const ULONG PROCESS_NOTIFY_LEA[] =
     0x00,   // placeholder
     0x00,   // placeholder
     0xe8,   // REDSTONE_5
+    0xe9,   // placeholder
     0x00,   // placeholder
     0x00,   // placeholder
     0x00,   // placeholder
     0x00,   // placeholder
-    0x00,   // placeholder
-    0x00    // placeholder
+    0x8D    // 22H2
 };

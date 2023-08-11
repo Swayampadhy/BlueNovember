@@ -6,7 +6,6 @@
 #include "Common.h"
 #include "Processes.h"
 #include "WindowsVersions.h"
-#pragma warning(disable: 6385)
 #pragma warning(disable: 4996)
 
 void DriverCleanup(PDRIVER_OBJECT DriverObject);
