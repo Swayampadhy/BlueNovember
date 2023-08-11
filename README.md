@@ -120,9 +120,6 @@ If you want to delete the driver , type - `sc stop BlueNovember` to stop the dri
 
 7. `-ciE`                   : **Enable DSE** - This option enables DSE of the driver.
 
-![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/de029a60-9ce7-462c-b949-c195682a177a)
-
-
 8. `-ciD`                   : **Disable DSE** - This option disables DSE of the driver.
 
 
