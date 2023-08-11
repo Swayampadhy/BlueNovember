@@ -122,7 +122,3 @@ If you want to delete the driver , type - `sc stop BlueNovember` to stop the dri
 
 8. `-ciD`                   : **Disable DSE** - This option disables DSE of the driver.
 
-
-### To-do -
--------
-1. Adding more functionalities.
