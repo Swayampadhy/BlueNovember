@@ -106,12 +106,9 @@ If you want to delete the driver , type - `sc stop BlueNovember` to stop the dri
 
 4. `-l `    : **Enumerate kernel callbacks** - This option will enumerate all kernel callbacks issued by the processes.
 
-  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/5f1948e5-8b72-485a-bc46-55ad5ebfa7b6)
+![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/fadb80e5-cbcb-40a7-8b1c-7fb45d4cccdd)
 
 5. `-r <process no>`    : **Remove callbacks** - This option removes all kernel callbacks issued by the process given.
-
-  ![image](https://github.com/Swayampadhy/BlueNovember/assets/37104162/b4b56d98-ea57-448d-abfa-914aa1cc3133)
-
 
 6. `-ci `                   : **Enumerate DSE** - This option enumerates Driver signature enforcement(DSE) of the driver.
 
