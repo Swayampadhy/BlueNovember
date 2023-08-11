@@ -131,6 +131,4 @@ If you want to delete the driver , type - `sc stop BlueNovember` to stop the dri
 
 ### To-do -
 -------
-1. Solve windows 22H2 randomly crashing after issuing commands.
-2. Streamlining the code more.
-3. Adding more functionalities.
+1. Adding more functionalities.
